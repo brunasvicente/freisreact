@@ -59,7 +59,23 @@
     .cartoes{
       display: flex;
       flex-direction: row;
-      
+      margin: 30px;
+
+      .cartao-um{
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        border-radius: 10px;
+
+        .cubo-amarelo{
+          background-color: yellow;
+          margin: 20px;
+          padding: 20px;
+        }
+
+
+      }
     }
   }
 }
