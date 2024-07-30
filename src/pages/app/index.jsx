@@ -1,10 +1,8 @@
 import './index.scss';
-import { Link } from 'react-router-dom';
 
 export default function App() {
   return (
     <div className="pagina-app">
-      
       <header className='navegacao'>
         <div className='um'>
           <img src="/assets/images/frei.png" alt="Logo Frei" />
@@ -12,39 +10,35 @@ export default function App() {
         </div>
 
         <div className='dois'>
-          <Link to='/'>
-            <a className='inicio'>Início</a>
-          </Link>
-
-          <Link to='/sobre'>
-            <a className='sobre'>Sobre</a>
-          </Link>
+          <a className='inicio' href="">Início</a>
+          <a className='sobre' href="">Sobre</a>
         </div>
       </header>
+
 
       <main>
           <h1>Escolha um treino...</h1>
 
           <div className='cartoes'>
             <div className='cartao-um'>
-              <a className='cubo-amarelo'></a>
+              <a className='cubo-amarelo' href=""></a>
 
               <p>Cupom de desconto</p>
-              <a className=''>Exercício 1</a>
+              <a className='' href="">Exercício 1</a>
             </div>
 
             <div className='cartao-dois'>
-              <a className='cubo-verde'></a>
+              <a className='cubo-verde' href=""></a>
 
               <p>Converter Kg/gramas</p>
-              <a>Exercício 2</a>
+              <a href="">Exercício 2</a>
             </div>
 
             <div className='cartao-tres'>
-              <a className='cubo-azul'></a>
+              <a className='cubo-azul' href=""></a>
 
               <p>Valor total por quantidade</p>
-              <a>Exercício 3</a>
+              <a href="">Exercício 3</a>
             </div>
           </div>
         </main>
