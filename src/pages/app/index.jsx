@@ -30,21 +30,30 @@ export default function App() {
               <a className='cubo-amarelo'></a>
 
               <p>Cupom de desconto</p>
-              <a className='exercicio-um'>Exercício 1</a>
+
+              <Link to='/exercicioum'>
+                <a className='exercicio-um'>Exercício 1</a>
+              </Link>
             </div>
 
             <div className='cartao-dois'>
               <a className='cubo-verde'></a>
 
               <p>Converter Kg/gramas</p>
-              <a className='exercicio-dois'>Exercício 2</a>
+
+              <Link to='/exerciciodois'>
+                <a className='exercicio-dois'>Exercício 2</a>
+              </Link>
             </div>
 
             <div className='cartao-tres'>
               <a className='cubo-azul'></a>
 
               <p>Valor total por quantidade</p>
-              <a className='exercicio-tres'>Exercício 3</a>
+
+              <Link to='/exerciciotres'>
+                <a className='exercicio-tres'>Exercício 3</a>
+              </Link>
             </div>
           </div>
         </main>
