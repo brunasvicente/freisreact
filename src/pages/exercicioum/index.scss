@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .pagina-exercicioum{
+
     .navegacao{
         display: flex;
         flex-direction: row;
@@ -53,6 +54,7 @@
       min-height: 100vh;
       padding: 50px;
 
+
       .parte-titulo{
         display: flex;
         flex-direction: row;
@@ -65,7 +67,47 @@
           font-family: 'Roboto';
           font-weight: 700;
           font-size: 26px;
+          margin-top: 5px;
+          margin-left: 15px;
         }
+      }
+
+
+      .parte-javascript{
+        background-color: #fff;
+        border-radius: 15px;
+
+        padding: 80px 35px;
+        margin-top: 50px;
+
+        p{
+          text-align: center;
+          font: 400 15px 'Roboto';
+          color: #383131;
+        }
+      }
+
+
+      .parte-usuario{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 10px;
+
+        margin: 40px 400px;
+        padding: 90px 50px;
+
+        p{
+          font: 600 16px 'Roboto';
+        }
+      }
+
+      .p-final{
+        text-align: center;
+        margin-left: 200px;
+        margin-top: -35px;
+
+        font: 650 15px 'Roboto';
       }
     }
 }

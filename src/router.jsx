@@ -16,6 +16,6 @@ export default function Navegacao() {
             <Route path='/exerciciodois' element={ <Exerciciodois/> }/>
             <Route path='/exerciciotres' element={ <Exerciciotres/> }/>
           </Routes>
-        </BrowserRouter>
+        </BrowserRouter>     
     )
 }
