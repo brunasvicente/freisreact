@@ -26,6 +26,7 @@ export default function App() {
           <h1>Escolha um treino...</h1>
 
           <div className='cartoes'>
+
             <div className='cartao-um'>
               <a className='cubo-amarelo'></a>
 
@@ -55,6 +56,7 @@ export default function App() {
                 <a className='exercicio-tres'>Exercício 3</a>
               </Link>
             </div>
+
           </div>
         </main>
 

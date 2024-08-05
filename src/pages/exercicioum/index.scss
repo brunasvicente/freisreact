@@ -72,6 +72,14 @@
         }
       }
 
+      .parte-faixa{
+        width: 1160px;
+        height: 5px;
+        margin-top: 17px;
+        border-radius: 10px;
+        background-color: #f0c711;
+      }
+
 
       .parte-javascript{
         background-color: #fff;
@@ -94,20 +102,55 @@
         background-color: #fff;
         border-radius: 10px;
 
-        margin: 40px 400px;
-        padding: 90px 50px;
+        margin: 30px 360px;
+        padding: 75px 50px;
+
+        .p-um{
+          margin-bottom: 8px;
+        }
+
+        .p-dois{
+          margin-bottom: 8px;
+          margin-top: 20px;
+        }
+
+        .input-um{
+          padding: 8px;
+          border-radius: 10px;
+        }
+
+        .input-dois{
+          padding: 8px;
+          border-radius: 10px;
+        }
+
 
         p{
           font: 600 16px 'Roboto';
+        }
+
+        .botao{
+          display: flex;
+          justify-content: flex-end;
+
+          background-color: #6278F7;
+          color: #fff;
+          font-family: 'Roboto';
+
+          margin: 25px 0px 5px 180px;
+          padding: 10px 50px 10px 100px;
+          border-radius: 10px;
         }
       }
 
       .p-final{
         text-align: center;
         margin-left: 200px;
-        margin-top: -35px;
+        margin-top: -25px;
 
-        font: 650 15px 'Roboto';
+        font: 650 16px 'Roboto';
       }
     }
+
+    
 }
