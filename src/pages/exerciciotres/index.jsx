@@ -30,6 +30,7 @@ export default function Exerciciotres() {
 
     return (
         <div className='pagina-exerciciotres'>
+
             <header className='navegacao'>
                 <div className='um'>
                     <img src="/assets/images/frei.png" alt="Logo Frei" />
@@ -65,21 +66,22 @@ export default function Exerciciotres() {
                 </div>
 
                 <div className='parte-usuario'>
+
                     <div className='card'>
-                    <div className='sub-usuario1'>
-                        <p className='p-um'>Quantidade pequeno</p>
-                        <input className='input-um' type="text" value={qntPequeno} onChange={alterarValorPequeno}/>
-                    </div>
+                        <div className='sub-usuario1'>
+                            <p className='p-um'>Quantidade pequeno</p>
+                            <input className='input-um' type="text" value={qntPequeno} onChange={alterarValorPequeno}/>
+                        </div>
 
-                    <div className='sub-usuario2'>
-                        <p className='p-dois'>Quantidade médio</p>
-                        <input className='input-dois' type="text" value={qntMedio} onChange={alterarValorMedio}/>
-                    </div>
+                        <div className='sub-usuario2'>
+                            <p className='p-dois'>Quantidade médio</p>
+                            <input className='input-dois' type="text" value={qntMedio} onChange={alterarValorMedio}/>
+                        </div>
 
-                    <div className='sub-usuario3'>
-                        <p className='p-tres'>Quantidade grande</p>
-                        <input className='input-tres' type="text" value={qntGrande} onChange={alterarValorGrande}/>
-                    </div>
+                        <div className='sub-usuario3'>
+                            <p className='p-tres'>Quantidade grande</p>
+                            <input className='input-tres' type="text" value={qntGrande} onChange={alterarValorGrande}/>
+                        </div>
                     </div>
 
                     <a className='botao' onClick={calcularValor}>Executar</a>
@@ -89,6 +91,7 @@ export default function Exerciciotres() {
                 <p className='p-final'>Resultado: O total é R$ {valorFinal.toFixed(2)}</p>
 
             </main>
+            
         </div>
     )
 }
