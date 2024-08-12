@@ -7,7 +7,6 @@
         background-color: #6278F7;
         padding: 10px;
     
-    
         .um{
           display: flex;
           flex-direction: row;
@@ -41,6 +40,7 @@
           }
         }
     }
+
 
     main{
       display: flex;
@@ -100,9 +100,11 @@
         align-items: center;
 
         gap: 20px;
-        margin-top: 25px;
-        padding: 5px;
-
+        margin-top: 30px;
+        margin-left: 200px;
+        margin-right: 200px;
+        padding-top: 30px;
+        padding-bottom: 30px;
 
         .card{
           display: flex;
@@ -138,8 +140,6 @@
           }
         }
 
-
-
         p{
           font: 600 16px 'Roboto';
         }
@@ -152,16 +152,17 @@
           color: #fff;
           font-family: 'Roboto';
 
-          margin: 25px 0px 5px 180px;
-          padding: 10px 50px 10px 100px;
+          margin: 25px 0px 5px 385px;
+          padding: 10px 50px 10px 60px;
           border-radius: 10px;
         }
       }
 
+
       .p-final{
         text-align: center;
-        margin-left: 200px;
-        margin-top: -25px;
+        margin-left: 400px;
+        margin-bottom: -60px;
 
         font: 650 16px 'Roboto';
       }

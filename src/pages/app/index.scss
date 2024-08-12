@@ -58,7 +58,7 @@
 
     .cartoes{
       display: flex;
-      flex-direction: row;
+      flex-wrap: wrap;
 
       margin: 30px;
       gap: 50px;
@@ -163,6 +163,114 @@
 
         .cubo-azul{
           background-color: #3aaee4;
+          margin: 20px;
+          padding: 40px;
+          border-radius: 15px;
+        }
+      }
+
+
+      .cartao-quatro{
+        background-color: #fff;
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 10px;
+        padding-bottom: 25px;
+        border-radius: 10px;
+
+        p{
+          font-family: 'Roboto';
+          margin-bottom: 20px;
+        }
+
+        .exercicio-quatro{
+          font-family: 'Roboto';
+        }
+
+        a{
+          text-decoration: none;
+          color: #383131;
+        }
+
+        .cubo-vermelho{
+          background-color: #dd362a;
+          margin: 20px;
+          padding: 40px;
+          border-radius: 15px;
+        }
+      }
+
+
+      .cartao-cinco{
+        background-color: #fff;
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 10px;
+        padding-bottom: 25px;
+        border-radius: 10px;
+
+        p{
+          font-family: 'Roboto';
+          margin-bottom: 20px;
+        }
+
+        .exercicio-cinco{
+          font-family: 'Roboto';
+        }
+
+        a{
+          text-decoration: none;
+          color: #383131;
+        }
+
+        .cubo-roxo{
+          background-color: #bf2add;
+          margin: 20px;
+          padding: 40px;
+          border-radius: 15px;
+        }
+      }
+
+
+      .cartao-seis{
+        background-color: #fff;
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 10px;
+        padding-bottom: 25px;
+        border-radius: 10px;
+
+        p{
+          font-family: 'Roboto';
+          margin-bottom: 20px;
+        }
+
+        .exercicio-seis{
+          font-family: 'Roboto';
+        }
+
+        a{
+          text-decoration: none;
+          color: #383131;
+        }
+
+        .cubo-cinza{
+          background-color: #dad0c4;
           margin: 20px;
           padding: 40px;
           border-radius: 15px;

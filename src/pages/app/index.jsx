@@ -32,7 +32,7 @@ export default function App() {
 
               <p>Cupom de desconto</p>
 
-              <Link to='/exercicioum'>
+              <Link to='/exercicio1'>
                 <a className='exercicio-um'>Exercício 1</a>
               </Link>
             </div>
@@ -42,7 +42,7 @@ export default function App() {
 
               <p>Converter Kg/gramas</p>
 
-              <Link to='/exerciciodois'>
+              <Link to='/exercicio2'>
                 <a className='exercicio-dois'>Exercício 2</a>
               </Link>
             </div>
@@ -52,11 +52,40 @@ export default function App() {
 
               <p>Valor total por quantidade</p>
 
-              <Link to='/exerciciotres'>
+              <Link to='/exercicio3'>
                 <a className='exercicio-tres'>Exercício 3</a>
               </Link>
             </div>
 
+            <div className='cartao-quatro'>
+              <a className='cubo-vermelho'></a>
+
+              <p>Tempo de Leitura Livro</p>
+
+              <Link to='/exercicio4'>
+                <a className='exercicio-quatro'>Exercício 4</a>
+              </Link>
+            </div>
+
+            <div className='cartao-cinco'>
+              <a className='cubo-roxo'></a>
+
+              <p>Verificação de Aluno</p>
+
+              <Link to='/exercicio5'>
+                <a className='exercicio-cinco'>Exercício 5</a>
+              </Link>
+            </div>
+
+            <div className='cartao-seis'>
+              <a className='cubo-cinza'></a>
+
+              <p>Calcular Salário Líquido</p>
+
+              <Link to='/exercicio6'>
+                <a className='exercicio-seis'>Exercício 6</a>
+              </Link>
+            </div>
           </div>
         </main>
 
