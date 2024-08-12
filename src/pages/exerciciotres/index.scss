@@ -107,6 +107,7 @@
         .card{
           display: flex;
           flex-direction: row;
+          gap: 30px;
 
           .p-um{
             margin-bottom: 8px;
@@ -121,8 +122,9 @@
           }
   
           .input-um{
-            padding: 8px 0px;
+            padding: 8px 10px;
             border-radius: 10px;
+            padding-right: -100px;
           }
   
           .input-dois{
