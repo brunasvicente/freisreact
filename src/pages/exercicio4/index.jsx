@@ -8,6 +8,12 @@ export default function Exercicioquatro() {
     const [segundos, setSegundos] = useState(0)
     const [horas, setHoras] = useState(0)
 
+    function calcular () {
+        let qntS = paginas * segundos
+        let qntH = qntS /3600
+        setHoras(qntH) 
+    }
+
 
     return (
         <div className='pagina-exercicioquatro'>
@@ -58,10 +64,10 @@ export default function Exercicioquatro() {
                     <p className='p-dois'>Tempo em segundos de leitura por página</p>
                     <input className='input-dois' type="text" value={segundos} onChange={a => setSegundos(a.target.value)}/>
 
-                    <a className='botao'>Executar</a>
+                    <a className='botao' onClick={calcular}>Executar</a>
                 </div>
 
-                <p className='p-final'>Você lerá {nomeLivro} em {horas}</p>
+                <p className='p-final'>Você lerá {nomeLivro} em {horas.toFixed(2)} horas</p>
 
             </main>
 

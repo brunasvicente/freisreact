@@ -86,6 +86,58 @@ export default function App() {
                 <a className='exercicio-seis'>Exercício 6</a>
               </Link>
             </div>
+
+            <div className='cartao-sete'>
+              <a className='cubo-laranja'></a>
+
+              <p>Verificar Cores Primárias</p>
+
+              <Link to='/exercicio7'>
+                <a className='exercicio-sete'>Exercício 7</a>
+              </Link>
+            </div>
+
+            <div className='cartao-oito'>
+              <a className='cubo-rosa'></a>
+
+              <p>Situação da Temperatura</p>
+
+              <Link to='/exercicio8'>
+                <a className='exercicio-oito'>Exercício 8</a>
+              </Link>
+            </div>
+
+            <div className='cartao-nove'>
+              <a className='cubo-marrom'></a>
+
+              <p>Compra na sorveteria</p>
+
+              <Link to='/exercicio9'>
+                <a className='exercicio-nove'>Exercício 9</a>
+              </Link>
+            </div>
+
+            <div className='cartao-dez'>
+              <a className='cubo-ciano'></a>
+
+              <p>Índice de Massa Corporal</p>
+
+              <Link to='/exercicio10'>
+                <a className='exercicio-dez'>Exercício 10</a>
+              </Link>
+            </div>
+
+            <div className='cartao-onze'>
+              <a className='cubo-bege'></a>
+
+              <p>Um número, uma Tabuada</p>
+
+              <Link to='/exercicio11'>
+                <a className='exercicio-onze'>Exercício 11</a>
+              </Link>
+            </div>
+
+            
           </div>
         </main>
 
