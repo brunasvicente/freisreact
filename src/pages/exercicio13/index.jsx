@@ -1,22 +1,12 @@
+import { useState } from 'react';
 import './index.scss';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 
-export default function Exerciciosete() {
-    const [cor1, setCor1] = useState('')
-    const [cor2, setCor2] = useState('')
-    const [primaria, setPrimaria] = useState(false)
-
-    function test () {
-        
-    }
-
+export default function Exerciciotreze() {
 
     return (
-        <div className='pagina-exerciciosete'>
-
+        <div className='pagina-exerciciotreze'>
             <header className='navegacao'>
-
                 <div className='um'>
                     <img src="/assets/images/frei.png" alt="Logo Frei" />
                     <h1>React FreiS</h1>
@@ -31,7 +21,6 @@ export default function Exerciciosete() {
                         <a className='sobre'>Sobre</a>
                     </Link>
                 </div>
-
             </header>
 
 
@@ -41,30 +30,26 @@ export default function Exerciciosete() {
                     <Link to='/'>
                         <img src="/assets/images/setinha.png" alt="Seta apontando para a esquerda" />
                     </Link>
-                    
-                    <h1>Exercício 07 - Cores Primárias</h1>
+
+                    <h1>Exercício 13 - Leitor de Valores Inteiros do Usuário</h1>
                 </div>
 
                 <div className='parte-faixa'></div>
 
                 <div className='parte-javascript'>
-                    <p>Implementar um programa em JavaScript para <b>verificar</b> se duas cores são primárias.</p>
+                    <p>Implementar um programa em Javascript que leia valores inteiros do usuário. Os valores devem ser pedidos ao usuário <b>até que o usuário digite o número 0</b>. Em seguida, o <b>programa deve</b> exibir a soma dos números positivos e a quantidade de números negativos.</p>
                 </div>
 
                 <div className='parte-usuario'>
-                    <p className='p-um'>Informe o nome da primeira cor</p>
-                    <input className='input-um' type="text" value={cor1} onChange={a => setCor1(a.target.value)}/>
+                    <p className='p-um'>Valor em gramas</p>
+                    <input className='input-um' type="text"/>
 
-                    <p className='p-dois'>Informe o nome da segunda cor</p>
-                    <input className='input-dois' type="text" value={cor2} onChange={a => setCor2(a.target.value)}/>
-
-                    <a className='botao' onClick={test}>Executar</a>
+                    <a className='botao'>Executar</a>
                 </div>
 
-                <p className='p-final'>As duas cores são primárias? {primaria ? 'Sim' : 'Não'}</p>
+                <p className='p-final'></p>
 
             </main>
-
         </div>
     )
 }

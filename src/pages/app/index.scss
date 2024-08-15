@@ -456,6 +456,78 @@
           border-radius: 15px;
         }
       }
+
+
+      .cartao-doze{
+        background-color: #fff;
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 10px;
+        padding-bottom: 25px;
+        border-radius: 10px;
+
+        p{
+          font-family: 'Roboto';
+          margin-bottom: 20px;
+        }
+
+        .exercicio-doze{
+          font-family: 'Roboto';
+        }
+
+        a{
+          text-decoration: none;
+          color: #383131;
+        }
+
+        .cubo-preto{
+          background-color: #000000;
+          margin: 20px;
+          padding: 40px;
+          border-radius: 15px;
+        }
+      }
+
+
+      .cartao-treze{
+        background-color: #fff;
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 10px;
+        padding-bottom: 25px;
+        border-radius: 10px;
+
+        p{
+          font-family: 'Roboto';
+          margin-bottom: 20px;
+        }
+
+        .exercicio-treze{
+          font-family: 'Roboto';
+        }
+
+        a{
+          text-decoration: none;
+          color: #383131;
+        }
+
+        .cubo-vinho{
+          background-color: #8f1e1e;
+          margin: 20px;
+          padding: 40px;
+          border-radius: 15px;
+        }
+      }
     }
   }
   

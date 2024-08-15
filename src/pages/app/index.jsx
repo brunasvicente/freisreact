@@ -137,6 +137,26 @@ export default function App() {
               </Link>
             </div>
 
+            <div className='cartao-doze'>
+              <a className='cubo-preto'></a>
+
+              <p>Calculo Média 3 Notas</p>
+
+              <Link to='/exercicio12'>
+                <a className='exercicio-doze'>Exercício 12</a>
+              </Link>
+            </div>
+
+            <div className='cartao-treze'>
+              <a className='cubo-vinho'></a>
+
+              <p>Leitor de Valores Inteiros</p>
+
+              <Link to='/exercicio13'>
+                <a className='exercicio-treze'>Exercício 13</a>
+              </Link>
+            </div>
+
             
           </div>
         </main>
