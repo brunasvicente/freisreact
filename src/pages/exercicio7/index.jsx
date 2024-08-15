@@ -7,10 +7,6 @@ export default function Exerciciosete() {
     const [cor2, setCor2] = useState('')
     const [primaria, setPrimaria] = useState(false)
 
-    function test () {
-        
-    }
-
 
     return (
         <div className='pagina-exerciciosete'>
@@ -58,10 +54,10 @@ export default function Exerciciosete() {
                     <p className='p-dois'>Informe o nome da segunda cor</p>
                     <input className='input-dois' type="text" value={cor2} onChange={a => setCor2(a.target.value)}/>
 
-                    <a className='botao' onClick={test}>Executar</a>
+                    <a className='botao'>Executar</a>
                 </div>
 
-                <p className='p-final'>As duas cores são primárias? {primaria ? 'Sim' : 'Não'}</p>
+                <p className='p-final'>As duas cores são primárias?</p>
 
             </main>
 
