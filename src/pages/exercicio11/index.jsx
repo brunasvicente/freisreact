@@ -4,6 +4,16 @@ import { Link } from 'react-router-dom';
 
 export default function Exerciciodois() {
     const [tabuada, setTabuada] = useState([])
+    const [numero, setNumero] = useState(0)
+
+    function t () {
+        let resultado = 0
+        
+        for (let i = 0; i <= 10; i++) {
+            resultado = numero * i
+            setTabuada([...tabuada, resultado])
+        }
+    }
 
 
     return (
@@ -44,12 +54,15 @@ export default function Exerciciodois() {
 
                 <div className='parte-usuario'>
                     <p className='p-um'>Número da tabuada</p>
-                    <input className='input-um' type="text"/>
+                    <input className='input-um' type="text" value={numero} onChange={a => setNumero(a.target.value)}/>
 
-                    <a className='botao'>Executar</a>
+                    <a className='botao' onClick={t}>Executar</a>
                 </div>
 
-                <p className='p-final'></p>
+                <ul className='p-final'>
+                    {tabuada.map ((item, pos) =>
+                    <li key={pos}>{item}</li>)}
+                </ul>
 
             </main>
         </div>

@@ -5,7 +5,19 @@ import { useState } from 'react';
 export default function Exerciciosete() {
     const [cor1, setCor1] = useState('')
     const [cor2, setCor2] = useState('')
-    const [primaria, setPrimaria] = useState(false)
+    const [primaria, setPrimaria] = useState('')
+
+    function test() {
+        setPrimaria('')
+
+        if ((cor1 == 'azul' || cor1 == 'vermelho' || cor1 ==  'amarelo') && (cor2 == 'azul' || cor2 == 'vermelho' || cor2 == 'amarelo')) {
+            setPrimaria(true)
+        }
+        
+        else if ((cor1 !== 'azul' || cor1 !== 'vermelho' || cor1 !==  'amarelo') && (cor2 !== 'azul' || cor2 !== 'vermelho' || cor2 !== 'amarelo')) {
+            setPrimaria(false)
+        }
+    }
 
 
     return (
@@ -54,10 +66,10 @@ export default function Exerciciosete() {
                     <p className='p-dois'>Informe o nome da segunda cor</p>
                     <input className='input-dois' type="text" value={cor2} onChange={a => setCor2(a.target.value)}/>
 
-                    <a className='botao'>Executar</a>
+                    <a className='botao' onClick={test}>Executar</a>
                 </div>
 
-                <p className='p-final'>As duas cores são primárias?</p>
+                <p className='p-final'>As duas cores são primárias? {primaria ? 'Sim' : 'Não'}</p>
 
             </main>
 
