@@ -7,12 +7,14 @@ export default function Exerciciodois() {
     const [numero, setNumero] = useState(0)
 
     function t () {
-        let resultado = 0
-        
-        for (let i = 0; i <= 10; i++) {
-            resultado = numero * i
-            setTabuada([...tabuada, resultado])
+        let novaTabuada = []
+
+        for (let i = 0; i <= 10; i++){
+            let resultado = numero * i 
+            novaTabuada.push(resultado)
         }
+
+        setTabuada(novaTabuada)
     }
 
 
