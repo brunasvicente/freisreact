@@ -157,6 +157,55 @@ export default function App() {
               </Link>
             </div>
 
+            <div className='cartao-quatorze'>
+              <a className='cubo-azulescuro'></a>
+
+              <p>Verificar Números Primos</p>
+
+              <Link to='/exercicio14'>
+                <a className='exercicio-quatorze'>Exercício 14</a>
+              </Link>
+            </div>
+
+            <div className='cartao-quinze'>
+              <a className='cubo-rosinha'></a>
+
+              <p>Inserir INFO de Usuários</p>
+
+              <Link to='/exercicio15'>
+                <a className='exercicio-quinze'>Exercício 15</a>
+              </Link>
+            </div>
+
+            <div className='cartao-dezesseis'>
+              <a className='cubo-rosinha'></a>
+
+              <p>Sorteio Número Premiado</p>
+
+              <Link to='/exercicio16'>
+                <a className='exercicio-dezesseis'>Exercício 16</a>
+              </Link>
+            </div>
+
+            <div className='cartao-dezessete'>
+              <a className='cubo-rosinha'></a>
+
+              <p>Menu: Operações Simples</p>
+
+              <Link to='/exercicio17'>
+                <a className='exercicio-dezessete'>Exercício 17</a>
+              </Link>
+            </div>
+
+            <div className='cartao-dezoito'>
+              <a className='cubo-rosinha'></a>
+
+              <p>Compras no SuperMercado</p>
+
+              <Link to='/exercicio18'>
+                <a className='exercicio-dezoito'>Exercício 18</a>
+              </Link>
+            </div>
             
           </div>
         </main>

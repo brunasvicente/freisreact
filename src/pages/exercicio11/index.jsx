@@ -11,7 +11,7 @@ export default function Exerciciodois() {
 
         for (let i = 0; i <= 10; i++){
             let resultado = numero * i 
-            novaTabuada.push(resultado)
+            novaTabuada.push(`${numero} X ${i} = ${resultado}`)
         }
 
         setTabuada(novaTabuada)
