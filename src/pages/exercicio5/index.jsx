@@ -1,8 +1,10 @@
 import './index.scss';
-import { Link } from 'react-router-dom';
-import { Cabecalho } from '../../components/cabecalho';
-
 import { useState } from 'react';
+
+//Componentes
+import { Cabecalho } from '../../components/cabecalho';
+import { Infoexercicios } from '../../components/info-exercicios';
+
 
 export default function Exerciciocinco() {
     const [nota1, setNota1] = useState(0)
@@ -20,26 +22,14 @@ export default function Exerciciocinco() {
         }
     }
 
-
     return (
         <div className='pagina-exerciciocinco'>
             <Cabecalho/>
 
             <main>
+                <Infoexercicios titulo={'Exercício 05 - Verificação Aluno'}
+                instrucoes={'Implementar um programa em Javascript para verificar se um aluno passou ou não, baseado em 3 notas, considerando que a média mínima para passar é 6.'}/>
 
-                <div className='parte-titulo'>
-                    <Link to='/'>
-                        <img src="/assets/images/setinha.png" alt="Seta apontando para a esquerda" />
-                    </Link>
-                    
-                    <h1>Exercício 05 - Verificação Aluno</h1>
-                </div>
-
-                <div className='parte-faixa'></div>
-
-                <div className='parte-javascript'>
-                    <p>Implementar um programa em Javascript para <b>verificar</b> se um aluno passou ou não, baseado em 3 notas, considerando que a média mínima para passar é 6.</p>
-                </div>
 
                 <div className='parte-usuario'>
 
@@ -66,7 +56,6 @@ export default function Exerciciocinco() {
 
                 <p className='p-final'>A média do aluno é {media.toFixed(2)} <br />
                 O aluno passou? {passou ? 'Sim' : 'Não'}</p>
-
             </main>
 
         </div>

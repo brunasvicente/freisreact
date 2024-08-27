@@ -1,20 +1,19 @@
 import { useState } from 'react';
 import './index.scss';
 import { Link } from 'react-router-dom';
+
+//Componentes
 import { Cabecalho } from '../../components/cabecalho';
+import { Infoexercicios } from '../../components/info-exercicios';
+
 
 export default function Exerciciodois() {
     const [valorGramas, setValorGramas] = useState(0)
-    const [valorKilo, setValorKilo] = useState(0)
+    const [resultado, setResultado] = useState('')
 
-    function alterarValor(a) {
-        let novoValor = a.target.value
-        setValorGramas(novoValor)
-    }
-
-    function converterGramas(a) {
-        let valorFinal = Number(valorGramas) / 1000
-        setValorKilo(valorFinal)
+    function converterGramas() {
+        let valorFinal = Number(valorGramas) * 1000
+        setResultado(`O total é ${valorFinal} gramas`)
     }
 
     return (
@@ -23,28 +22,17 @@ export default function Exerciciodois() {
 
             <main>
 
-                <div className='parte-titulo'>
-                    <Link to='/'>
-                        <img src="/assets/images/setinha.png" alt="Seta apontando para a esquerda" />
-                    </Link>
-
-                    <h1>Exercício 02 - Converter Kg/gramas</h1>
-                </div>
-
-                <div className='parte-faixa'></div>
-
-                <div className='parte-javascript'>
-                    <p>Implementar um programa em Javascript para <b>converter kilos em gramas.</b></p>
-                </div>
+                <Infoexercicios titulo={'Exercício 02 - Converter Kg/gramas'}
+                instrucoes={'Implementar um programa em Javascript para converter kilos em gramas.'}/>
 
                 <div className='parte-usuario'>
                     <p className='p-um'>Valor em gramas</p>
-                    <input className='input-um' type="text" value={valorGramas} onChange={alterarValor}/>
+                    <input className='input-um' type="text" value={valorGramas} onChange={a => setValorGramas(a.target.value)}/>
 
                     <a className='botao' onClick={converterGramas}>Executar</a>
                 </div>
 
-                <p className='p-final'>Resultado: O total é R$ {valorKilo}</p>
+                <p className='p-final'>{resultado}</p>
 
             </main>
         </div>

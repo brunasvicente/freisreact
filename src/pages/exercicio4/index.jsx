@@ -1,40 +1,30 @@
 import './index.scss';
-import { Link } from 'react-router-dom';
-import { Cabecalho } from '../../components/cabecalho';
 import { useState } from 'react';
+
+//Componentes
+import { Cabecalho } from '../../components/cabecalho';
+import { Infoexercicios } from '../../components/info-exercicios';
+
 
 export default function Exercicioquatro() {
     const [nomeLivro, setNomeLivro] = useState('')
     const [paginas, setPaginas] = useState(0)
     const [segundos, setSegundos] = useState(0)
-    const [horas, setHoras] = useState(0)
+    const [resultado, setResultado] = useState('')
 
     function calcular () {
         let qntS = paginas * segundos
         let qntH = qntS /3600
-        setHoras(qntH) 
+        setResultado(`Você lerá ${nomeLivro} em ${qntH.toFixed(2)} horas`)
     }
-
 
     return (
         <div className='pagina-exercicioquatro'>
             <Cabecalho/>
 
             <main>
-
-                <div className='parte-titulo'>
-                    <Link to='/'>
-                        <img src="/assets/images/setinha.png" alt="Seta apontando para a esquerda" />
-                    </Link>
-                    
-                    <h1>Exercício 04 - Tempo de Leitura</h1>
-                </div>
-
-                <div className='parte-faixa'></div>
-
-                <div className='parte-javascript'>
-                    <p>Implementar um programa em Javascript que <b>calcule</b> o tempo que um livro será lido por uma pessoa a partir do nome do livro, do total de páginas e do tempo em segundos de leitura por página.</p>
-                </div>
+                <Infoexercicios titulo={'Exercício 04 - Tempo de Leitura'}
+                instrucoes={'Implementar um programa em Javascript que calcule o tempo que um livro será lido por uma pessoa a partir do nome do livro, do total de páginas e do tempo em segundos de leitura por página.'}/>
 
                 <div className='parte-usuario'>
                     <p className='p-um'>Informe o nome do livro</p>
@@ -49,8 +39,7 @@ export default function Exercicioquatro() {
                     <a className='botao' onClick={calcular}>Executar</a>
                 </div>
 
-                <p className='p-final'>Você lerá {nomeLivro} em {horas.toFixed(2)} horas</p>
-
+                <p className='p-final'>{resultado}</p>
             </main>
 
         </div>

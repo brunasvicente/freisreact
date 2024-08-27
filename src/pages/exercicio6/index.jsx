@@ -1,7 +1,10 @@
 import './index.scss';
-import { Link } from 'react-router-dom';
-import { Cabecalho } from '../../components/cabecalho';
 import { useState } from 'react';
+
+//Componentes
+import { Cabecalho } from '../../components/cabecalho';
+import { Infoexercicios } from '../../components/info-exercicios';
+
 
 export default function Exercicioseis() {
     const [salarioBase, setSalarioBase] = useState(0)
@@ -20,20 +23,8 @@ export default function Exercicioseis() {
             <Cabecalho/>
 
             <main>
-
-                <div className='parte-titulo'>
-                    <Link to='/'>
-                        <img src="/assets/images/setinha.png" alt="Seta apontando para a esquerda" />
-                    </Link>
-                    
-                    <h1>Exercício 06 - Calcular o Salário Líquido</h1>
-                </div>
-
-                <div className='parte-faixa'></div>
-
-                <div className='parte-javascript'>
-                    <p>Implementar um programa em Javascript para <b>calcular o salário líquido</b> de um funcionário, a partir do seu salário base, do bônus mensal em porcentageme e do total de descontos em reais.</p>
-                </div>
+                <Infoexercicios titulo={'Exercício 06 - Calcular o Salário Líquido'}
+                instrucoes={'Implementar um programa em Javascript para calcular o salário líquido de um funcionário, a partir do seu salário base, do bônus mensal em porcentageme e do total de descontos em reais.'}/>
 
                 <div className='parte-usuario'>
                     <p className='p-um'>Informe o valor do salário base</p>
@@ -49,7 +40,6 @@ export default function Exercicioseis() {
                 </div>
 
                 <p className='p-final'>Seu salário líquido é de R$ {total.toFixed(2)}</p>
-
             </main>
 
         </div>

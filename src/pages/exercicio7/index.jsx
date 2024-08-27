@@ -1,7 +1,7 @@
 import './index.scss';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Cabecalho } from '../../components/cabecalho';
-import { useState } from 'react';
 
 export default function Exerciciosete() {
     const [cor1, setCor1] = useState('')
