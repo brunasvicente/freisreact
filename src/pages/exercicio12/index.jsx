@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import { Cabecalho } from '../../components/cabecalho';
 
 export default function Exerciciodoze() {
+    const [nota, setNota] = useState(0)
+    const [resultado, setResultado] = useState('')
+    const [vetor, setVetor] = useState([])
 
 
     return (
@@ -27,8 +30,8 @@ export default function Exerciciodoze() {
                 </div>
 
                 <div className='parte-usuario'>
-                    <p className='p-um'>Informe a nota</p>
-                    <input className='input-um' type="text"/>
+                    <p className='p-um'>Informe a nota:</p>
+                    <input className='input-um' type="text" value={nota} onChange={a => setNota(a.target.value)}/>
 
                     <a className='botao'>Executar</a>
                 </div>
