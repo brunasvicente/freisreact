@@ -1,11 +1,14 @@
 import './index.scss';
-import { Link } from 'react-router-dom';
 
+//Componentes
 import { Cabecalho } from '../../components/cabecalho';
+import { Cartoes } from '../../components/cartoes';
+
 
 export default function App() {
   return (
     <div className="pagina-app">
+      
       <Cabecalho/>
 
       <main>
@@ -13,185 +16,41 @@ export default function App() {
 
           <div className='cartoes'>
 
-            <div className='cartao-um'>
-              <a className='cubo-amarelo'></a>
+            <Cartoes titulo={'Converter Kg/gramas'} destino={'/exercicio1'} exercicio={'Exercício 1'}/>
 
-              <p>Cupom de desconto</p>
+            <Cartoes titulo={'Converter Kg/gramas'} destino={'/exercicio2'} exercicio={'Exercício 2'}/>
 
-              <Link to='/exercicio1'>
-                <a className='exercicio-um'>Exercício 1</a>
-              </Link>
-            </div>
+            <Cartoes titulo={'Valor total por quantidade'} destino={'/exercicio3'} exercicio={'Exercício 3'}/>
 
-            <div className='cartao-dois'>
-              <a className='cubo-verde'></a>
+            <Cartoes titulo={'Tempo de Leitura Livro'} destino={'/exercicio4'} exercicio={'Exercício 4'}/>
 
-              <p>Converter Kg/gramas</p>
+            <Cartoes titulo={'Verificação de Aluno'} destino={'/exercicio5'} exercicio={'Exercício 5'}/>
 
-              <Link to='/exercicio2'>
-                <a className='exercicio-dois'>Exercício 2</a>
-              </Link>
-            </div>
+            <Cartoes titulo={'Calcular Salário Líquido'} destino={'/exercicio6'} exercicio={'Exercício 6'}/>
 
-            <div className='cartao-tres'>
-              <a className='cubo-azul'></a>
+            <Cartoes titulo={'Verificar Cores Primárias'} destino={'/exercicio7'} exercicio={'Exercício 7'}/>
 
-              <p>Valor total por quantidade</p>
+            <Cartoes titulo={'Situação da Temperatura'} destino={'/exercicio8'} exercicio={'Exercício 8'}/>
 
-              <Link to='/exercicio3'>
-                <a className='exercicio-tres'>Exercício 3</a>
-              </Link>
-            </div>
+            <Cartoes titulo={'Compra na Sorveteria'} destino={'/exercicio9'} exercicio={'Exercício 9'}/>
 
-            <div className='cartao-quatro'>
-              <a className='cubo-vermelho'></a>
+            <Cartoes titulo={'Índice de Massa Corporal'} destino={'/exercicio10'} exercicio={'Exercício 10'}/>
 
-              <p>Tempo de Leitura Livro</p>
+            <Cartoes titulo={'Um número, uma Tabuada'} destino={'/exercicio11'} exercicio={'Exercício 11'}/>
 
-              <Link to='/exercicio4'>
-                <a className='exercicio-quatro'>Exercício 4</a>
-              </Link>
-            </div>
+            <Cartoes titulo={'Calculo da Média de 3 Notas'} destino={'/exercicio12'} exercicio={'Exercício 12'}/>
 
-            <div className='cartao-cinco'>
-              <a className='cubo-roxo'></a>
+            <Cartoes titulo={'Leitor de Valores Inteiros'} destino={'/exercicio13'} exercicio={'Exercício 13'}/>
 
-              <p>Verificação de Aluno</p>
+            <Cartoes titulo={'Verificar Números Primos'} destino={'/exercicio14'} exercicio={'Exercício 14'}/>
 
-              <Link to='/exercicio5'>
-                <a className='exercicio-cinco'>Exercício 5</a>
-              </Link>
-            </div>
+            <Cartoes titulo={'Inserir INFO de Usuários'} destino={'/exercicio15'} exercicio={'Exercício 15'}/>
 
-            <div className='cartao-seis'>
-              <a className='cubo-cinza'></a>
+            <Cartoes titulo={'Sorteio de Número Premiado'} destino={'/exercicio16'} exercicio={'Exercício 16'}/>
 
-              <p>Calcular Salário Líquido</p>
+            <Cartoes titulo={'Menu: Operações Simples'} destino={'/exercicio17'} exercicio={'Exercício 17'}/>
 
-              <Link to='/exercicio6'>
-                <a className='exercicio-seis'>Exercício 6</a>
-              </Link>
-            </div>
-
-            <div className='cartao-sete'>
-              <a className='cubo-laranja'></a>
-
-              <p>Verificar Cores Primárias</p>
-
-              <Link to='/exercicio7'>
-                <a className='exercicio-sete'>Exercício 7</a>
-              </Link>
-            </div>
-
-            <div className='cartao-oito'>
-              <a className='cubo-rosa'></a>
-
-              <p>Situação da Temperatura</p>
-
-              <Link to='/exercicio8'>
-                <a className='exercicio-oito'>Exercício 8</a>
-              </Link>
-            </div>
-
-            <div className='cartao-nove'>
-              <a className='cubo-marrom'></a>
-
-              <p>Compra na sorveteria</p>
-
-              <Link to='/exercicio9'>
-                <a className='exercicio-nove'>Exercício 9</a>
-              </Link>
-            </div>
-
-            <div className='cartao-dez'>
-              <a className='cubo-ciano'></a>
-
-              <p>Índice de Massa Corporal</p>
-
-              <Link to='/exercicio10'>
-                <a className='exercicio-dez'>Exercício 10</a>
-              </Link>
-            </div>
-
-            <div className='cartao-onze'>
-              <a className='cubo-bege'></a>
-
-              <p>Um número, uma Tabuada</p>
-
-              <Link to='/exercicio11'>
-                <a className='exercicio-onze'>Exercício 11</a>
-              </Link>
-            </div>
-
-            <div className='cartao-doze'>
-              <a className='cubo-preto'></a>
-
-              <p>Calculo Média 3 Notas</p>
-
-              <Link to='/exercicio12'>
-                <a className='exercicio-doze'>Exercício 12</a>
-              </Link>
-            </div>
-
-            <div className='cartao-treze'>
-              <a className='cubo-vinho'></a>
-
-              <p>Leitor de Valores Inteiros</p>
-
-              <Link to='/exercicio13'>
-                <a className='exercicio-treze'>Exercício 13</a>
-              </Link>
-            </div>
-
-            <div className='cartao-quatorze'>
-              <a className='cubo-azulescuro'></a>
-
-              <p>Verificar Números Primos</p>
-
-              <Link to='/exercicio14'>
-                <a className='exercicio-quatorze'>Exercício 14</a>
-              </Link>
-            </div>
-
-            <div className='cartao-quinze'>
-              <a className='cubo-rosinha'></a>
-
-              <p>Inserir INFO de Usuários</p>
-
-              <Link to='/exercicio15'>
-                <a className='exercicio-quinze'>Exercício 15</a>
-              </Link>
-            </div>
-
-            <div className='cartao-dezesseis'>
-              <a className='cubo-rosinha'></a>
-
-              <p>Sorteio Número Premiado</p>
-
-              <Link to='/exercicio16'>
-                <a className='exercicio-dezesseis'>Exercício 16</a>
-              </Link>
-            </div>
-
-            <div className='cartao-dezessete'>
-              <a className='cubo-rosinha'></a>
-
-              <p>Menu: Operações Simples</p>
-
-              <Link to='/exercicio17'>
-                <a className='exercicio-dezessete'>Exercício 17</a>
-              </Link>
-            </div>
-
-            <div className='cartao-dezoito'>
-              <a className='cubo-rosinha'></a>
-
-              <p>Compras no SuperMercado</p>
-
-              <Link to='/exercicio18'>
-                <a className='exercicio-dezoito'>Exercício 18</a>
-              </Link>
-            </div>
+            <Cartoes titulo={'Compras no SuperMercado'} destino={'/exercicio18'} exercicio={'Exercício 18'}/>
             
           </div>
         </main>

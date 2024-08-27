@@ -1,43 +1,105 @@
-.cartoes{
-    display: flex;
-    flex-wrap: wrap;
+.cartao {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    margin: 30px;
-    gap: 50px;
+  width: 300px;
+  height: 225px;
+  padding-top: 10px;
+  border-radius: 10px;
 
-    .cartao{
-      background-color: #fff;
-      display: flex;
+  p {
+    font-family: 'Roboto';
+    margin-bottom: 20px;
+  }
 
-      flex-direction: column;
-      align-items: center;
+  .exercicio {
+    font-family: 'Roboto';
+  }
 
-      padding-left: 60px;
-      padding-right: 60px;
-      padding-top: 10px;
-      padding-bottom: 15px;
-      border-radius: 10px;
+  a {
+    text-decoration: none;
+    color: #383131;
+  }
 
-      p{
-        font-family: 'Roboto';
-        margin-bottom: 20px;
-      }
+  .cubo {
+    margin: 20px;
 
-      .exercicio{
-        font-family: 'Roboto';
-      }
+    padding: 40px;
+    border-radius: 15px;
+  }
 
-      a{
-        text-decoration: none;
-        color: #383131;
-      }
+  /*Cores dos Cubos*/
+  .cubo-amarelo {
+    background-color: #f0c711;
+  }
 
-      .cubo{
-        background-color: #f0c711;
-        margin: 20px;
-        
-        padding: 40px;
-        border-radius: 15px;
-      }
-    }
+  .cubo-verde {
+    background-color: #51f36c;
+  }
+
+  .cubo-azul {
+    background-color: #3aaee4;
+  }
+
+  .cubo-vermelho {
+    background-color: #dd362a;
+  }
+
+  .cubo-roxo {
+    background-color: #bf2add;
+  }
+
+  .cubo-cinza {
+    background-color: #dad0c4;
+  }
+
+  .cubo-laranja {
+    background-color: #ff5e00;
+  }
+
+  .cubo-rosa {
+    background-color: #ff0095;
+  }
+
+  .cubo-marrom {
+    background-color: #925506;
+  }
+
+  .cubo-ciano {
+    background-color: #34e7ff;
+  }
+
+  .cubo-bege {
+    background-color: #f5bc71;
+  }
+
+  .cubo-preto {
+    background-color: #000000;
+  }
+
+  .cubo-vinho {
+    background-color: #8f1e1e;
+  }
+
+  .cubo-azulescuro {
+    background-color: #0004ff;
+  }
+
+  .cubo-rosinha {
+    background-color: #f08078;
+  }
+
+  .cubo-violeta {
+    background-color: #8400ff;
+  }
+
+  .cubo-rosachoque {
+    background-color: #f700ff;
+  }
+
+  .cubo-vermelhoclaro{
+    background-color: #c2222a;
+  }
 }
