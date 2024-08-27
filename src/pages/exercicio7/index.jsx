@@ -1,7 +1,10 @@
 import './index.scss';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+
+//Componentes
 import { Cabecalho } from '../../components/cabecalho';
+import { Infoexercicios } from '../../components/info-exercicios';
+
 
 export default function Exerciciosete() {
     const [cor1, setCor1] = useState('')
@@ -20,26 +23,13 @@ export default function Exerciciosete() {
         }
     }
 
-
     return (
         <div className='pagina-exerciciosete'>
             <Cabecalho/>
 
             <main>
-
-                <div className='parte-titulo'>
-                    <Link to='/'>
-                        <img src="/assets/images/setinha.png" alt="Seta apontando para a esquerda" />
-                    </Link>
-                    
-                    <h1>Exercício 07 - Cores Primárias</h1>
-                </div>
-
-                <div className='parte-faixa'></div>
-
-                <div className='parte-javascript'>
-                    <p>Implementar um programa em JavaScript para <b>verificar</b> se duas cores são primárias.</p>
-                </div>
+                <Infoexercicios titulo={'Exercício 07 - Cores Primárias'}
+                instrucoes={'Implementar um programa em JavaScript para verificar se duas cores são primárias.'}/>
 
                 <div className='parte-usuario'>
                     <p className='p-um'>Informe o nome da primeira cor</p>
@@ -52,7 +42,6 @@ export default function Exerciciosete() {
                 </div>
 
                 <p className='p-final'>As duas cores são primárias? {primaria ? 'Sim' : 'Não'}</p>
-
             </main>
 
         </div>

@@ -1,7 +1,10 @@
 import './index.scss';
-import { Cabecalho } from '../../components/cabecalho';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+
+//Componentes
+import { Cabecalho } from '../../components/cabecalho';
+import { Infoexercicios } from '../../components/info-exercicios';
+
 
 export default function Exerciciooito() {
     const [temperatura, setTemperatura] = useState(0)
@@ -29,26 +32,13 @@ export default function Exerciciooito() {
         }
     }
 
-
     return (
         <div className='pagina-exerciciooito'>
             <Cabecalho/>
 
             <main>
-
-                <div className='parte-titulo'>
-                    <Link to='/'>
-                        <img src="/assets/images/setinha.png" alt="Seta apontando para a esquerda" />
-                    </Link>
-
-                    <h1>Exercício 08 - Situação a partir da temperatura</h1>
-                </div>
-
-                <div className='parte-faixa'></div>
-
-                <div className='parte-javascript'>
-                    <p>Implementar um programa em Javascript que, a partir da temperatura, <b>avalie a situação</b> da pessoa conforme a tabela ao lado. Ao final, apresente a classificação.</p>
-                </div>
+                <Infoexercicios titulo={'Exercício 08 - Situação a partir da temperatura'}
+                instrucoes={'Implementar um programa em Javascript que, a partir da temperatura, avalie a situação da pessoa conforme a tabela ao lado. Ao final, apresente a classificação.'}/>
 
                 <div className='parte-usuario'>
                     <p className='p-um'>Informe a temperatura</p>
@@ -58,7 +48,6 @@ export default function Exerciciooito() {
                 </div>
 
                 <p className='p-final'>{resultado}</p>
-
             </main>
         </div>
     )

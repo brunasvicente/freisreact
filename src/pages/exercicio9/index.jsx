@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import './index.scss';
 import { Link } from 'react-router-dom';
+
+//Componentes
 import { Cabecalho } from '../../components/cabecalho';
+import { Infoexercicios } from '../../components/info-exercicios';
+
 
 export default function Exercicionove() {
     const [gramas, setGramas] = useState(0)
@@ -19,13 +23,14 @@ export default function Exercicionove() {
 
         setTotal(resultado)
     }
-    
 
     return (
         <div className='pagina-exercicionove'>
             <Cabecalho/>
 
             <main>
+                <Infoexercicios titulo={'Exercício 09 - Compra na Sorveteria'}
+                instrucoes={'Implementar um programa em Javascript que calcule o total a se pagar em uma compra na sorveteria, a partir do total de gramas comprado. O preço de <b>100 g é R$ 3,50 mas se o total de gramas for a partir de 1kg, o preço das 100g diminui 50 centavos. Se o total de gramas for menor ou igual a zero, enviar mensagem "Peso Inválido.'}/>
 
                 <div className='parte-titulo'>
                     <Link to='/'>
