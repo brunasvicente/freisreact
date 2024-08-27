@@ -1,0 +1,43 @@
+.cartoes{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 30px;
+    gap: 50px;
+
+    .cartao{
+      background-color: #fff;
+      display: flex;
+
+      flex-direction: column;
+      align-items: center;
+
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-top: 10px;
+      padding-bottom: 15px;
+      border-radius: 10px;
+
+      p{
+        font-family: 'Roboto';
+        margin-bottom: 20px;
+      }
+
+      .exercicio{
+        font-family: 'Roboto';
+      }
+
+      a{
+        text-decoration: none;
+        color: #383131;
+      }
+
+      .cubo{
+        background-color: #f0c711;
+        margin: 20px;
+        
+        padding: 40px;
+        border-radius: 15px;
+      }
+    }
+}

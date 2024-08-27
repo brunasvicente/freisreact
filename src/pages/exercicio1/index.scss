@@ -1,51 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .pagina-exercicioum{
-
-    .navegacao{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    
-        background-color: #6278F7;
-        padding: 10px;
-    
-    
-        .um{
-          display: flex;
-          flex-direction: row;
-          margin-left: 50px;
-    
-          img{
-            height: 50px;
-          }
-    
-          h1{
-            color: #fff;
-            font-size: 20px;
-            font-family: 'Roboto';
-            margin-top: 12px;
-            margin-left: 25px;
-          }
-        }
-    
-        .dois{
-          margin: 14px;
-        
-          a{
-            color: #fff;
-            text-decoration: none;
-            font-family: 'Roboto';
-            margin-right: 40px;
-          }
-    
-          .inicio{
-            margin-right: 0px;
-          }
-        }
-    }
-
-    
+  
     main{
       display: flex;
       flex-direction: column;

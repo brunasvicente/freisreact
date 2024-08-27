@@ -1,5 +1,6 @@
-import { useState } from 'react';
 import './index.scss';
+import { Cabecalho } from '../../components/cabecalho';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Exerciciooito() {
@@ -31,23 +32,7 @@ export default function Exerciciooito() {
 
     return (
         <div className='pagina-exerciciooito'>
-            <header className='navegacao'>
-                <div className='um'>
-                    <img src="/assets/images/frei.png" alt="Logo Frei" />
-                    <h1>React FreiS</h1>
-                </div>
-
-                <div className='dois'>
-                    <Link to='/'>
-                        <a className='inicio'>Início</a>
-                    </Link>
-
-                    <Link to='/sobre'>
-                        <a className='sobre'>Sobre</a>
-                    </Link>
-                </div>
-            </header>
-
+            <Cabecalho/>
 
             <main>
 

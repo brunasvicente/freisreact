@@ -1,29 +1,14 @@
 import { useState } from 'react';
 import './index.scss';
 import { Link } from 'react-router-dom';
+import { Cabecalho } from '../../components/cabecalho';
 
 export default function Exerciciodoze() {
 
 
     return (
         <div className='pagina-exerciciodoze'>
-            <header className='navegacao'>
-                <div className='um'>
-                    <img src="/assets/images/frei.png" alt="Logo Frei" />
-                    <h1>React FreiS</h1>
-                </div>
-
-                <div className='dois'>
-                    <Link to='/'>
-                        <a className='inicio'>Início</a>
-                    </Link>
-
-                    <Link to='/sobre'>
-                        <a className='sobre'>Sobre</a>
-                    </Link>
-                </div>
-            </header>
-
+            <Cabecalho/>
 
             <main>
 
