@@ -1,7 +1,10 @@
-import { useState } from 'react';
 import './index.scss';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+
+//Componentes
 import { Cabecalho } from '../../components/cabecalho';
+import { Infoexercicios } from '../../components/info-exercicios';
+
 
 export default function Exerciciotreze() {
     const [numero, setNumero] = useState(0)
@@ -25,20 +28,8 @@ export default function Exerciciotreze() {
             <Cabecalho/>
 
             <main>
-
-                <div className='parte-titulo'>
-                    <Link to='/'>
-                        <img src="/assets/images/setinha.png" alt="Seta apontando para a esquerda" />
-                    </Link>
-
-                    <h1>Exercício 13 - Leitor de Valores Inteiros do Usuário</h1>
-                </div>
-
-                <div className='parte-faixa'></div>
-
-                <div className='parte-javascript'>
-                    <p>Implementar um programa em Javascript que leia valores inteiros do usuário. Os valores devem ser pedidos ao usuário <b>até que o usuário digite o número 0</b>. Em seguida, o <b>programa deve</b> exibir a soma dos números positivos e a quantidade de números negativos.</p>
-                </div>
+                <Infoexercicios titulo={'Exercício 13 - Leitor de Valores Inteiros do Usuário'}
+                instrucoes={'Implementar um programa em Javascript que leia valores inteiros do usuário. Os valores devem ser pedidos ao usuário até que o usuário digite o número 0. Em seguida, o programa deve exibir a soma dos números positivos e a quantidade de números negativos.'}/>
 
                 <div className='parte-usuario'>
                     <p className='p-um'>Informe o Valor</p>
@@ -48,7 +39,6 @@ export default function Exerciciotreze() {
                 </div>
 
                 <p className='p-final'> {resultado} </p>
-
             </main>
         </div>
     )

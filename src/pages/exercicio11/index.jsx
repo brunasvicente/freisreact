@@ -1,7 +1,10 @@
-import { useState } from 'react';
 import './index.scss';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+
+//Componentes
 import { Cabecalho } from '../../components/cabecalho';
+import { Infoexercicios } from '../../components/info-exercicios';
+
 
 export default function Exerciciodois() {
     const [tabuada, setTabuada] = useState([])
@@ -18,26 +21,13 @@ export default function Exerciciodois() {
         setTabuada(novaTabuada)
     }
 
-
     return (
         <div className='pagina-exercicioonze'>
             <Cabecalho/>
 
             <main>
-
-                <div className='parte-titulo'>
-                    <Link to='/'>
-                        <img src="/assets/images/setinha.png" alt="Seta apontando para a esquerda" />
-                    </Link>
-
-                    <h1>Exercício 11 - Tabuada</h1>
-                </div>
-
-                <div className='parte-faixa'></div>
-
-                <div className='parte-javascript'>
-                    <p>Implemente um programa em JavaScript que <b>escreva no terminal</b> a tabuada de um número informado pelo usuário. A mensagem deve estar no formato: "A x B = X".</p>
-                </div>
+                <Infoexercicios titulo={'Exercício 11 - Tabuada'}
+                instrucoes={'Implemente um programa em JavaScript que escreva no terminal a tabuada de um número informado pelo usuário. A mensagem deve estar no formato: "A x B = X".'}/>
 
                 <div className='parte-usuario'>
                     <p className='p-um'>Número da tabuada</p>
@@ -50,7 +40,6 @@ export default function Exerciciodois() {
                     {tabuada.map ((item, pos) =>
                     <li key={pos}>{item}</li>)}
                 </ul>
-
             </main>
         </div>
     )

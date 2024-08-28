@@ -1,7 +1,10 @@
 import './index.scss';
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
+
+//Componentes
 import { Cabecalho } from '../../components/cabecalho';
+import { Infoexercicios } from '../../components/info-exercicios';
+
 
 export default function Exerciciodez() {
     const [altura, setAltura] = useState(0)
@@ -31,26 +34,13 @@ export default function Exerciciodez() {
         setClas(situacao)
     }
 
-
     return (
         <div className='pagina-exerciciodez'>
             <Cabecalho/>
 
             <main>
-
-                <div className='parte-titulo'>
-                    <Link to='/'>
-                        <img src="/assets/images/setinha.png" alt="Seta apontando para a esquerda" />
-                    </Link>
-                    
-                    <h1>Exercício 10 - Cálculo de IMC</h1>
-                </div>
-
-                <div className='parte-faixa'></div>
-
-                <div className='parte-javascript'>
-                    <p>Implemente um programa em JavaScript que a partir da altura e do pes de uma pessoa, <b>calcule o IMC</b> e avalie a faixa correspondente a tabela. Ao final, apresente o IMC e a situação.</p>
-                </div>
+                <Infoexercicios titulo={'Exercício 10 - Cálculo de IMC'}
+                instrucoes={'Implemente um programa em JavaScript que a partir da altura e do pes de uma pessoa, calcule o IMC e avalie a faixa correspondente a tabela. Ao final, apresente o IMC e a situação.'}/>
 
                 <div className='parte-usuario'>
                     <p className='p-um'>Informe a altura</p>
@@ -63,7 +53,6 @@ export default function Exerciciodez() {
                 </div>
 
                 <p className='p-final'>Seu IMC é {imc.toFixed(2)} <br /> {clas}</p>
-
             </main>
 
         </div>
