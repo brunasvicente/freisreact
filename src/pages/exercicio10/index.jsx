@@ -9,13 +9,12 @@ import { Infoexercicios } from '../../components/info-exercicios';
 export default function Exerciciodez() {
     const [altura, setAltura] = useState(0)
     const [peso, setPeso] = useState(0)
-    const [imc, setImc] = useState(0)
-    const [clas, setClas] = useState('')
+    const [resultado, setResultado] = useState('')
+    const [sit, setSit] = useState('')
 
     function calcularImc () {
         let i = peso / (altura * altura)
         let situacao = ''
-        setImc(i)
 
         if (i < 18.5) {
             situacao = 'Sua classificação é: Abaixo do Peso'
@@ -31,7 +30,8 @@ export default function Exerciciodez() {
             situacao = 'Sua classificação é: Obesidade Grau III'
         }
 
-        setClas(situacao)
+        setResultado(`Seu IMC é ${i.toFixed(2)}`)
+        setSit(situacao)
     }
 
     return (
@@ -52,7 +52,7 @@ export default function Exerciciodez() {
                     <a className='botao' onClick={calcularImc}>Executar</a>
                 </div>
 
-                <p className='p-final'>Seu IMC é {imc.toFixed(2)} <br /> {clas}</p>
+                <p className='p-final'>{resultado} <br/> {sit}</p>
             </main>
 
         </div>

@@ -36,22 +36,12 @@ export default function App() {
 
             <Cartoes titulo={'Índice de Massa Corporal'} destino={'/exercicio10'} exercicio={'Exercício 10'}/>
 
-            <Cartoes titulo={'Um número, uma Tabuada'} destino={'/exercicio11'} exercicio={'Exercício 11'}/>
+            <Cartoes titulo={'Um número, uma Tabuada'} destino={'/exercicio11'} exercicio={'Exercício 11'}/>  
 
-            <Cartoes titulo={'Calculo da Média de 3 Notas'} destino={'/exercicio12'} exercicio={'Exercício 12'}/>
+            <Cartoes titulo={'Verificar Números Primos'} destino={'/exercicio12'} exercicio={'Exercício 12'}/>
 
-            <Cartoes titulo={'Leitor de Valores Inteiros'} destino={'/exercicio13'} exercicio={'Exercício 13'}/>
+            <Cartoes titulo={'Inserir INFO de Usuários'} destino={'/exercicio13'} exercicio={'Exercício 13'}/>
 
-            <Cartoes titulo={'Verificar Números Primos'} destino={'/exercicio14'} exercicio={'Exercício 14'}/>
-
-            <Cartoes titulo={'Inserir INFO de Usuários'} destino={'/exercicio15'} exercicio={'Exercício 15'}/>
-
-            <Cartoes titulo={'Sorteio de Número Premiado'} destino={'/exercicio16'} exercicio={'Exercício 16'}/>
-
-            <Cartoes titulo={'Menu: Operações Simples'} destino={'/exercicio17'} exercicio={'Exercício 17'}/>
-
-            <Cartoes titulo={'Compras no SuperMercado'} destino={'/exercicio18'} exercicio={'Exercício 18'}/>
-            
           </div>
         </main>
 

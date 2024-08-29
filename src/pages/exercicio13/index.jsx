@@ -6,40 +6,32 @@ import { Cabecalho } from '../../components/cabecalho';
 import { Infoexercicios } from '../../components/info-exercicios';
 
 
-export default function Exerciciotreze() {
-    const [numero, setNumero] = useState(0)
-    const [somaPositivos, setSomaPositivos] = useState(0)
-    const [qntNegativos, setQntNegativos] = useState(0)
-    const [resultado, setResultado] = useState('')
-
-    function leitura () {
-        if (numero > 0) {
-            setSomaPositivos( Number(somaPositivos) + Number(numero) )
-        } if (numero < 0) {
-            setQntNegativos( Number(qntNegativos) +1 )
-        } if (numero == 0) {
-            setResultado(`A soma dos números positivos é ${somaPositivos}.
-            A quantidade de números negativos é ${qntNegativos}.`)
-        }
-    }
+export default function Exercicioquinze() {
 
     return (
-        <div className='pagina-exerciciotreze'>
-            <Cabecalho/>
+        <div className='pagina-exercicioquinze'>
+            <Cabecalho />
 
             <main>
-                <Infoexercicios titulo={'Exercício 13 - Leitor de Valores Inteiros do Usuário'}
-                instrucoes={'Implementar um programa em Javascript que leia valores inteiros do usuário. Os valores devem ser pedidos ao usuário até que o usuário digite o número 0. Em seguida, o programa deve exibir a soma dos números positivos e a quantidade de números negativos.'}/>
+                <Infoexercicios titulo={'Exercício 13 - Informações de Usuários'}
+                instrucoes={'Implementar um programa em Javascript que leia o nome, a idade e o sexo de várias pessoas. O programa vai perguntar se o usuário quer ou não continuar. No final, mostre: a. O nome da pessoa mais velha b. O nome da mulher mais jovem c. A média de idade do grupo d. Quantos homens tem mais de 30 anos e Quantas mulheres tem menos de 18 anos'} />
 
                 <div className='parte-usuario'>
-                    <p className='p-um'>Informe o Valor</p>
-                    <input className='input-um' type="text" value={numero} onChange={a => setNumero(a.target.value)}/>
+                    <p className='p-um'>Informe o nome da pessoa</p>
+                    <input className='input-um' type="text" />
 
-                    <a className='botao' onClick={leitura}>Executar</a>
+                    <p className='p-dois'>Informe a idade da pessoa</p>
+                    <input className='input-dois' type="text" />
+
+                    <p className='p-dois'>Tempo o sexo da pessoa</p>
+                    <input className='input-dois' type="text" />
+
+                    <a className='botao'>Executar</a>
                 </div>
 
-                <p className='p-final'> {resultado} </p>
+                <p className='p-final'></p>
             </main>
+
         </div>
     )
 }

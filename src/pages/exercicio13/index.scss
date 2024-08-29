@@ -1,55 +1,69 @@
-.pagina-exerciciotreze{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-      main{
+.pagina-exercicioquinze {
+
+  main {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #F5F6FA;
+    min-height: 100vh;
+    padding: 50px;
+    
+
+    .parte-usuario {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 10px;
+
+      margin: 30px 360px;
+      padding: 75px 50px;
+
+      .p-um {
+        margin-bottom: 8px;
+      }
+
+      .p-dois {
+        margin-bottom: 8px;
+        margin-top: 20px;
+      }
+
+      .input-um {
+        padding: 8px;
+        border-radius: 10px;
+      }
+
+      .input-dois {
+        padding: 8px;
+        border-radius: 10px;
+      }
+
+
+      p {
+        font: 600 16px 'Roboto';
+      }
+
+      .botao {
         display: flex;
         flex-direction: column;
-  
-        background-color: #F5F6FA;
-        min-height: 100vh;
-        padding: 50px;
-  
-  
-        .parte-usuario{
-          display: flex;
-          flex-direction: column;
-          background-color: #fff;
-          border-radius: 10px;
-  
-          margin: 30px 360px;
-          padding: 55px 50px;
-  
-          .p-um{
-            margin-bottom: 8px;
-          }
-  
-          .input-um{
-            padding: 8px;
-            border-radius: 10px;
-          }
-  
-          p{
-            font: 600 16px 'Roboto';
-          }
-  
-          .botao{
-            display: flex;
-            justify-content: flex-end;
-  
-            background-color: #6278F7;
-            color: #fff;
-            font-family: 'Roboto';
-  
-            margin: 25px 0px 5px 180px;
-            padding: 10px 50px 10px 100px;
-            border-radius: 10px;
-          }
-        }
-  
-        .p-final{
-          text-align: center;
-          margin-top: -25px;
-  
-          font: 650 16px 'Roboto';
-        }
+ 
+        background-color: #6278F7;
+        color: #fff;
+        font-family: 'Roboto';
+
+        padding: 10px 50px 10px 100px;
+        margin: 35px 0px 10px 100px;
+        border-radius: 10px;
       }
+    }
+
+    .p-final {
+      text-align: center;
+      margin-left: 130px;
+      margin-top: -25px;
+
+      font: 650 16px 'Roboto';
+    }
+  }
 }

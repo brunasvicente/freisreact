@@ -15,11 +15,6 @@ import Exercicio10 from './pages/exercicio10';
 import Exercicio11 from './pages/exercicio11';
 import Exercicio12 from './pages/exercicio12';
 import Exercicio13 from './pages/exercicio13';
-import Exercicio14 from './pages/exercicio14';
-import Exercicio15 from './pages/exercicio15';
-import Exercicio16 from './pages/exercicio16';
-import Exercicio17 from './pages/exercicio17';
-import Exercicio18 from './pages/exercicio18';
 
 export default function Navegacao() {
     return(
@@ -40,11 +35,6 @@ export default function Navegacao() {
             <Route path='/exercicio11' element={ <Exercicio11/> }/>
             <Route path='/exercicio12' element={ <Exercicio12/> }/>
             <Route path='/exercicio13' element={ <Exercicio13/> }/>
-            <Route path='/exercicio14' element={ <Exercicio14/> }/>
-            <Route path='/exercicio15' element={ <Exercicio15/> }/>
-            <Route path='/exercicio16' element={ <Exercicio16/> }/>
-            <Route path='/exercicio17' element={ <Exercicio17/> }/>
-            <Route path='/exercicio18' element={ <Exercicio18/> }/>
           </Routes>
         </BrowserRouter>     
     )
