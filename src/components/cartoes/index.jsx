@@ -16,11 +16,6 @@ export function Cartoes(props) {
         if (props.exercicio == 'Exercício 11') return 'cubo-bege'
         if (props.exercicio == 'Exercício 12') return 'cubo-preto'
         if (props.exercicio == 'Exercício 13') return 'cubo-vinho'
-        if (props.exercicio == 'Exercício 14') return 'cubo-azulescuro'
-        if (props.exercicio == 'Exercício 15') return 'cubo-rosinha'
-        if (props.exercicio == 'Exercício 16') return 'cubo-violeta'
-        if (props.exercicio == 'Exercício 17') return 'cubo-rosachoque'
-        if (props.exercicio == 'Exercício 18') return 'cubo-vermelhoclaro'
     }
 
     return (
