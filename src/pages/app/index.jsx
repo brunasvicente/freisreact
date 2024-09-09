@@ -16,7 +16,7 @@ export default function App() {
 
           <div className='cartoes'>
 
-            <Cartoes titulo={'Converter Kg/gramas'} destino={'/exercicio1'} exercicio={'Exercício 1'}/>
+            <Cartoes titulo={'Cupom de Desconto'} destino={'/exercicio1'} exercicio={'Exercício 1'}/>
 
             <Cartoes titulo={'Converter Kg/gramas'} destino={'/exercicio2'} exercicio={'Exercício 2'}/>
 
